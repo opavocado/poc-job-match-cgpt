@@ -42,7 +42,7 @@ The average execution time for each job offer was ~10 seconds.
 From the analysis performed during our work on this project we confirmed our initial assumption that job offers don't follow any stablished patters or writing styles.
 Even when considering offers from a same source, the availability of relevant information for the potential candidate is inconsistent and usually sparse over several paragraphs of text.
 Advanced language models such as ChatGPT show increasing potential to address this problem as this POC has shown promising results with a ~85% of positive outcomes.
-By implementating a simple prompt, it was possible to obtain a filtered set of job offers that the applicant could easily digest.
+By implementing a relatively simple prompt, it was possible to obtain a filtered set of job offers that the applicant could easily digest.
 
 ### Ambiguous/Invalid Results
 We asked the bot to explain the reasons behind certain requirements that were misclassified, the general answer to this prompt is that there is not enough data provided to make sure a certain requirement is ment, so it makes an assumption based on its understanding of the average experience of a professional with a similar background to the applicant.
