@@ -25,11 +25,19 @@ The prompt used for evaluation is simple:
 ```prompt = "Given my profile and this job offer, list which requirements are met or not. Provide the results in csv format with columns separated by a pipe: requirement|status (met/unmet) \n - my profile: " + summarized_cv + " \n - job offer: " + job[column_names.index('description')]```   
 
 ## Results
-<PENDING> e.g. - Results -> 20 provided, how many accurate? 
+The process run for 20 job offers, these are the overall results:
+
+| Result         | Count |
+|----------------|-------|
+| Valid          | 9     |
+| Somewhat Valid | 8     |
+| Invalid        | 3     |
+
+The average execution time for each job offer was ~10 seconds.
 
     
 ## Conclusion
-This POC has shown promising results with a <PENDING> of positive outcomes.
+This POC has shown promising results with a ~85% of positive outcomes.
 With just the implementation of a simple prompt it was possible to obtain a filtered set of job offers that the applicant could easily digest.
 
 ### Ambiguous/Invalid Results
@@ -37,10 +45,9 @@ We asked the bot to explain the reasons behind certain requirements that were mi
 Based on these results, it would be recommended for the applicant to go through this exercise once, extract the common requirements in their target job offers and make them explicit in their profile summary, and run the process again.
 Note that this last task could also be a good candidate feature to be integrated in the process and prompt ChatGPT for input in the profile summary.
     
-## Opportunities and Future Features
-- 
-
-
-- good if integration -> better if integrate w/ applicant profile as with a limited summary the bot makes certain assumptions that might not be 100% correct
-- future features -> custom filters that chatgpt can analyze (e.g. fully remote or not?)
-- exec time
+### Opportunities and Future Features
+- Better Input Profile Summary by providing more explicit qualifications that match common job offer requirements
+- - Evaluate the possibility of executing that task with ChatGPT
+- Facilitate the job offer search by integrating with Job Search Engines (note this in most cases this is not possible without becoming a partner integration - which implies some considerable effort/resources)
+- User defined filters that are not supported natively by the search enginges could be introduced to further narrow down the search (e.g.: ability to search for world-wide remote vs country or region-specific remote jobs)
+- Execution time is expected to reduce with the Pro Version, however this would require further analysis
