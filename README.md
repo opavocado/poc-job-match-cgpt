@@ -1,7 +1,10 @@
 # Job Matching using ChatGPT
 
 ## The Problem
-Nowdays it can be challenging for a tech worker to find the right job as there is an increasing number of platforms and a vast amount of job offers available. These offers often come with very specific requirements that may not fully align with the worker's experience, making it this task very time consuming and ultimately exhausting.
+Nowdays it can be challenging for a tech worker to find the right job due to the increasing number of platforms and the vast number of job offers available. We have identified two specific problems that need to be addressed:
+
+1* Job offers often come with very specific requirements that may not fully align with the worker's experience. Verifying these requirements manually can be very time-consuming.
+2* Job offers usually do not adhere to any particular template or writing style, making problem 1 even more frustrating and ultimately exhausting.
 
 ## Goal
 Explore ChatGPT capabilities to help accelerate an applicant's job search.
@@ -13,7 +16,7 @@ Explore ChatGPT capabilities to help accelerate an applicant's job search.
 - Basic validations and error handling
 
 ### Out of Scope
-- Job Search Engine Integrations (e.g.: linkedin, glassdoor, indeed, etc) -> these integrations although technically possible they will only work once the engines have validated the integration (i.e.: becoming a parter integration)
+- Job Search Engine Integrations (e.g.: linkedin, glassdoor, indeed, etc) -> these integrations although technically possible they will only work once the engines have validated the integration (i.e.: becoming a partner integration) 
 
 
 ## Project
