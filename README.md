@@ -19,7 +19,7 @@ Explore ChatGPT capabilities to help accelerate an applicant's job search.
 - Job Search Engine Integrations (e.g.: linkedin, glassdoor, indeed, etc) -> these integrations although technically possible they will only work once the engines have validated the integration (i.e.: becoming a partner integration) 
 
 ## Project
-The project is based around a single JPNotebook that process a set of job offers (```job_offers.csv``` provided in CSV format), compares them against the applicants profile summary (```summarized_cv.txt``` provided in TXT format) using ChatGPT (```gpt-api.key``` replace with your api key) and generates a CSV detailing the matching requirements for each job profile (```processed_job_offers.csv```).
+The project is based around a single JPNotebook that process a set of job offers (`job_offers.csv` provided in CSV format), compares them against the applicants profile summary (`summarized_cv.txt` provided in TXT format) using ChatGPT (`gpt-api.key` replace with your api key) and generates a CSV detailing the matching requirements for each job profile (`processed_job_offers.csv`).
 
 The prompt used for evaluation is simple:
 ```prompt = "Given my profile and this job offer, list which requirements are met or not. Provide the results in csv format with columns separated by a pipe: requirement|status (met/unmet) \n - my profile: " + summarized_cv + " \n - job offer: " + job[column_names.index('description')]```   
@@ -32,6 +32,7 @@ The process run for 20 job offers, these are the overall results:
 | Valid          | 9     |
 | Somewhat Valid | 8     |
 | Invalid        | 3     |
+See `reviewed_results.csv` for full details
 
 The average execution time for each job offer was ~10 seconds.
 
