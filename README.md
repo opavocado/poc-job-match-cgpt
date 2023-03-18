@@ -3,8 +3,8 @@
 ## The Problem
 Nowdays it can be challenging for a tech worker to find the right job due to the increasing number of platforms and the vast number of job offers available. We have identified two specific problems that need to be addressed:
 
-1* Job offers often come with very specific requirements that may not fully align with the worker's experience. Verifying these requirements manually can be very time-consuming.
-2* Job offers usually do not adhere to any particular template or writing style, making problem 1 even more frustrating and ultimately exhausting.
+1. Job offers often come with very specific requirements that may not fully align with the worker's experience. Verifying these requirements manually can be very time-consuming.
+2. Job offers usually do not adhere to any particular template or writing style, making problem 1 even more frustrating and ultimately exhausting.
 
 ## Goal
 Explore ChatGPT capabilities to help accelerate an applicant's job search.
