@@ -27,9 +27,15 @@ The prompt used for evaluation is simple:
 ## Results
 <PENDING> e.g. - Results -> 20 provided, how many accurate? 
 
+    
 ## Conclusion
 This POC has shown promising results with a <PENDING> of positive outcomes.
 With just the implementation of a simple prompt it was possible to obtain a filtered set of job offers that the applicant could easily digest.
+
+### Ambiguous/Invalid Results
+We asked the bot to explain the reasons behind certain requirements that were misclassified, the general answer to this prompt is that there is not enough data provided to make sure a certain requirement is ment, so it makes an assumption based on its understanding of the average experience of a professional with a similar background to the applicant.
+Based on these results, it would be recommended for the applicant to go through this exercise once, extract the common requirements in their target job offers and make them explicit in their profile summary, and run the process again.
+Note that this last task could also be a good candidate feature to be integrated in the process and prompt ChatGPT for input in the profile summary.
     
 ## Opportunities and Future Features
 - 
